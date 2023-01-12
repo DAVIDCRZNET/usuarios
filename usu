@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>PROGRAMA DE PRUEBA PARA CHAYSss</title>
+
+  <meta charset="UTF-8">
+  <style>
+
+body {
+         
+        background-color:#364150;
+        color:#ABEBC6 ;
+    }
+       #logo_img {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+form {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    input[type='button'] {
+        width: 100px;
+        height: 50px;
+      }
+
+</style>
+    
+
+  </style>
+  <script>
+    function bienvenida(){
+        var nombreU = document.getElementById("nombre").value;
+        var edadU = document.getElementById("edad").value;
+        var materiaU = document.getElementById("materia").value;
+         var apellidosU = document.getElementById("apellidos").value;
+        alert("Estudiante: " + nombreU + "\nEdad: " + edadU +" años"+  "\nMateria: "+ materiaU+ "\nApellidos: "+ apellidosU+"\n\n\nSERÁS REDIRECCIONADO A YOUTUBE");
+    }
+  </script>
+</head>
+<body>
+  <center><h1>REGISTRO PARA ALUMNOS</h1></center>
+  <form>
+   
+    <label>Ingresa tu nombre:</label>
+    <input type="text" id="nombre">
+    <label>Ingresa la tus apellidos:</label>
+    <input type="text" id="apellidos">
+    <label>Ingresa tu edad:</label>
+    <input type="text" id="edad">
+    
+
+
+    <label>Ingresa la Materia:</label>
+    <input type="text" id="materia">
+<input type="button" value="GUARDAR" onclick="bienvenida();window.open('https://www.youtube.com','_blank')">
+
+
+
+    <p>Colegio de Estudios Científicos y Tecnológicos del Estado de Oaxaca © 2023</p>
+    <img src="http://www.cecyteo.edu.mx/Nova/App_Themes/Nova2016/img/icons/logo.png" id="logo_img">
+
+    <img src="http://www.cecyteo.edu.mx/Nova/App_Themes/Nova2016/img/icons/logo.png" id="logo_img" onclick="redirect()">
+    <script>
+    function redirect() {
+        window.location.href = 'http://www.cecyteo.edu.mx/Nova/Alumnos';
+    }
+</script>
+  </form>
+</body>
+</html>
